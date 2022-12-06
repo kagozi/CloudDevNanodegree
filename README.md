@@ -62,3 +62,5 @@
 
 ![s3-object-url](screenshots/s3-object-url.png)
 
+
+[Download Project Zip File](https://github.com/kagozi/CloudDevNanodegree/archive/refs/heads/main.zip)
