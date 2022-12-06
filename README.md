@@ -53,7 +53,7 @@
 
 [website-endpoint](http://my-368990345256-bucket2.s3-website.us-east-2.amazonaws.com/)
 
-![website-endpoint-url](screenshots/website-endpoint-url.png)
+![website-endpoint-url](screenshots/website-endpont-url.png)
 
 
 *S3 Object URL*
