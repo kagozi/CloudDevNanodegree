@@ -27,3 +27,10 @@
   clientId: 'e6b0lVxl6kvxbOmmhXokijScI50kNTnW',
   callbackUrl: 'http://localhost:3000/callback'
 };`
+
+
+# AWS XRAY
+
+**Configured AWS XRAY**
+
+![alt text](images/aws-xray.png)
