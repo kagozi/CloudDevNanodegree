@@ -4,7 +4,8 @@ import { Types as S3Types } from 'aws-sdk/clients/s3';
 import { TodoItem } from '../models/TodoItem';
 import { TodoUpdate } from '../models/TodoUpdate';
 
-
+const AWSXRay = require('aws-xray-sdk');
+const XAWS = AWSXRay.captureAWS(AWS);
 export class TodoAccess {
 private readonly docClient: DocumentClient;
 private readonly s3Client: S3Types;
@@ -12,8 +13,8 @@ private readonly todoTable: string;
 private readonly s3BucketName: string;
 
 constructor() {
-this.docClient = new AWS.DynamoDB.DocumentClient();
-this.s3Client = new AWS.S3({ signatureVersion: 'v4' });
+this.docClient = new XAWS.DynamoDB.DocumentClient();
+this.s3Client = new XAWS.S3({ signatureVersion: 'v4' });
 this.todoTable = process.env.TODOS_TABLE;
 this.s3BucketName = process.env.S3_BUCKET_NAME;
 }
